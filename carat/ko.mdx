@@ -1,0 +1,151 @@
+---
+mode: "custom"
+title: "Carat Docs"
+---
+
+export function openSearch() {
+  document.getElementById('search-bar-entry').click();
+}
+
+<div className="relative w-full flex items-center justify-center" style={{ height: '26rem', overflow: 'hidden'}}>
+<div className="absolute inset-0 bg-primary dark:bg-primary-light" style={{opacity: 0.05 }}></div>
+  <div style={{ position: 'absolute', textAlign: 'center', padding: '0 1rem' }}>
+    <div
+      className="text-gray-900 dark:text-white"
+      style={{
+       fontWeight: '800',
+       fontSize: '2.5rem',
+       margin: '0',
+       marginTop: '5rem'
+      }}
+    >
+      자주 묻는 질문
+    </div>
+    <div className="flex items-center justify-center" style={{ maxWidth: '800px', margin: '0 auto' }}>
+    <button
+      type="button"
+      className="hidden w-full lg:flex items-center text-sm leading-6 py-4 pl-4 pr-4 text-gray-500 rounded-full"
+      id="home-search-entry"
+      style={{
+        marginTop: '2rem',
+        maxWidth: '40rem',
+        background: '#FFF',
+        boxShadow: '0px 1px 4px 0px rgba(8, 9, 10, 0.25), 0px 0px 0px 4px rgba(255, 255, 255, 0.20)',
+        cursor: 'pointer',
+        textAlign: 'left',
+      }}
+      onClick={openSearch}
+    >
+      <svg
+        className="h-4 w-4 ml-1.5 flex-none bg-primary hover:bg-gray-600 dark:bg-primary-dark dark:hover:bg-white/70"
+        style={{
+        marginRight: '0.5rem',
+         maskImage:
+           'url("https://mintlify.b-cdn.net/v6.5.1/solid/magnifying-glass.svg")',
+         maskRepeat: 'no-repeat',
+         maskPosition: 'center center',
+        }}
+      />
+      아티클 제목, 내용
+    </button>
+    </div>
+  </div>
+</div>
+
+<div
+  style={{marginTop: '2rem', marginBottom: '2rem', maxWidth: '70rem', marginLeft: 'auto',
+  marginRight: 'auto', paddingLeft: '1.25rem',
+  paddingRight: '1.25rem' }}
+>
+  <h2
+    className="text-gray-900 dark:text-gray-200 mb-4"
+    style={{
+      fontSize: '2rem',
+      fontWeight: '500',
+    }}
+  >
+  추천
+  </h2>
+
+
+
+<CardGroup >
+  <Card
+    title="자주 묻는 질문"
+    icon="circle-question"
+    iconType="solid"
+    href="/carat/ko/articles/자주-묻는-질문-c096e71e"
+    horizontal
+  >
+  최신 앱(2.185.0) 업데이트 이후 자주 묻는 질문을 모아봤어요.
+  </Card>
+</CardGroup>
+</div>
+<div
+  style={{marginTop: '2rem', marginBottom: '8rem', maxWidth: '70rem', marginLeft: 'auto',
+  marginRight: 'auto', paddingLeft: '1.25rem',
+  paddingRight: '1.25rem' }}
+>
+
+  <h2
+    className="text-gray-900 dark:text-gray-200 mb-4"
+    style={{
+      fontSize: '2rem',
+      fontWeight: '500',
+    }}
+  >
+전체 카테고리
+  </h2>
+
+<CardGroup cols={3}>
+
+<Card title="AI 프로필" icon="frame" iconType="solid" href="https://docs.channel.io/carat/ko/categories/AI-%ED%94%84%EB%A1%9C%ED%95%84-2a77eb34" horizontal>
+
+17개의 아티클
+
+</Card>
+
+<Card title="AI 이미지/영상 생성" icon="palette" iconType="solid" href="https://docs.channel.io/carat/ko/categories/AI-%EC%9D%B4%EB%AF%B8%EC%A7%80%EC%98%81%EC%83%81-%EC%83%9D%EC%84%B1-444050c7" horizontal>
+10개의 아티클
+</Card>
+
+<Card title="AI 채팅" icon="comment-dots" iconType="solid" href="https://docs.channel.io/carat/ko/categories/AI-%EC%B1%84%ED%8C%85-2a7fb9ac" horizontal>
+3개의 아티클
+</Card>
+
+<Card title="게시물" icon="folder" iconType="solid" href="https://docs.channel.io/carat/ko/categories/%EA%B2%8C%EC%8B%9C%EB%AC%BC-b496ee8c" horizontal>
+2개의 아티클
+</Card>
+
+<Card title="결제/환불" icon="credit-card" iconType="solid" href="/carat/ko/categories/결제환불-6751bbd3" horizontal>
+3개의 아티클
+</Card>
+
+<Card title="유료 플랜" icon="gem" iconType="solid" href="/carat/ko/articles/구독-혜택을-사용하지-않았는데-환불받을-수-있나요-556c1e33" horizontal>
+17개의 아티클
+</Card>
+
+<Card title="계정" icon="key" iconType="solid" href="https://docs.channel.io/carat/ko/categories/%EA%B3%84%EC%A0%95-e63b3758" horizontal>
+4개의 아티클
+</Card>
+
+<Card title="크리에이터" icon="user-pen" iconType="solid" href="https://docs.channel.io/carat/ko/categories/%ED%81%AC%EB%A6%AC%EC%97%90%EC%9D%B4%ED%84%B0-9b962d0b" horizontal>
+2개의 아티클
+</Card>
+
+<Card title="신고/차단" icon="ban" iconType="solid" href="https://docs.channel.io/carat/ko/categories/%EC%8B%A0%EA%B3%A0%EC%B0%A8%EB%8B%A8-26b6359b" horizontal>
+5개의 아티클
+</Card>
+
+<Card title="캐럿 웹사이트(PC)" icon="globe" iconType="solid" href="https://docs.channel.io/carat/ko/categories/%EC%BA%90%EB%9F%BF-%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8PC-28bbd53a" horizontal>
+3개의 아티클
+</Card>
+
+<Card title="기타" icon="ellipsis" iconType="solid" href="https://docs.channel.io/carat/ko/categories/%EA%B8%B0%ED%83%80-2e632207" horizontal>
+5개의 아티클
+</Card>
+
+
+</CardGroup>
+
+</div>
