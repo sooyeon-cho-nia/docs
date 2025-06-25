@@ -91,5 +91,12 @@
   },
   "feedback": {
     "thumbsRating": true
+  },
+  "modeToggle": {
+    "default": "light"
+  },
+  "custom": {
+    "css": "/custom.css",
+    "js": "/custom.js"
   }
 }

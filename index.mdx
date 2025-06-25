@@ -15,22 +15,23 @@ description: "캐럿 AI를 더 잘 활용하는 방법을 찾아보세요"
 />
 
 <div className="text-center mb-12">
-  <h1 className="text-5xl font-bold mb-8">안녕하세요, 무엇을 도와드릴까요?</h1>
+  <h1 className="main-title">안녕하세요, 무엇을 도와드릴까요?</h1>
   
-  <div className="max-w-2xl mx-auto mb-6">
+  <div className="custom-search-container">
     <input 
       type="search" 
       placeholder="무엇을 찾고 계신가요..." 
-      className="w-full px-6 py-4 text-lg border border-gray-200 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-primary"
+      className="custom-search-input"
+      id="main-search"
     />
   </div>
   
-  <div className="flex flex-wrap gap-2 justify-center">
-    <span className="px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-full text-sm cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-700 transition">이미지 생성</span>
-    <span className="px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-full text-sm cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-700 transition">결제 방법</span>
-    <span className="px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-full text-sm cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-700 transition">팀 공유</span>
-    <span className="px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-full text-sm cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-700 transition">환불 정책</span>
-    <span className="px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-full text-sm cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-700 transition">멤버 추가</span>
+  <div className="search-tags">
+    <span className="search-tag">이미지 생성</span>
+    <span className="search-tag">결제 방법</span>
+    <span className="search-tag">팀 공유</span>
+    <span className="search-tag">환불 정책</span>
+    <span className="search-tag">멤버 추가</span>
   </div>
 </div>
 
