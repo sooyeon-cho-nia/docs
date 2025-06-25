@@ -11,8 +11,10 @@ title: "캐럿 AI 헬프센터"
 `}
 </script>
 
+<div className="container mx-auto px-4 sm:px-6 lg:px-8">
+
 <div className="text-center mb-12">
-  <h1 className="text-4xl font-bold mb-8 mt-12">안녕하세요, 무엇을 도와드릴까요?</h1>
+  <h1 className="text-4xl font-bold mb-8 mt-12" style={{ color: '#1a1a1a' }}>안녕하세요, 무엇을 도와드릴까요?</h1>
   
   <div className="flex items-center justify-center mx-auto" style={{ maxWidth: '800px' }}>
     <button
@@ -42,13 +44,26 @@ title: "캐럿 AI 헬프센터"
       >
         <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
       </svg>
-      <span className="ml-3 text-gray-600">무엇을 찾고 계신가요...</span>
+      <span className="ml-3 text-gray-600">궁금한 내용을 AI에게 물어보세요</span>
     </button>
   </div>
   
   <div className="flex flex-wrap gap-2 justify-center">
     <span 
-      className="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-sm cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-700"
+      className="px-4 py-2 rounded-full text-sm cursor-pointer transition-all"
+      style={{
+        border: '1px solid #e5e7eb',
+        color: '#6b7280',
+        backgroundColor: 'transparent'
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.backgroundColor = '#f3f4f6';
+        e.currentTarget.style.borderColor = '#d1d5db';
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.backgroundColor = 'transparent';
+        e.currentTarget.style.borderColor = '#e5e7eb';
+      }}
       onClick={() => {
         const searchEntry = document.getElementById('search-bar-entry');
         if (searchEntry) {
@@ -56,17 +71,30 @@ title: "캐럿 AI 헬프센터"
           setTimeout(() => {
             const searchInput = document.querySelector('input[type="search"]');
             if (searchInput) {
-              searchInput.value = '이미지 생성';
+              searchInput.value = '나만의 이미지안 브레인룻 만들기';
               searchInput.dispatchEvent(new Event('input', { bubbles: true }));
             }
           }, 100);
         }
       }}
     >
-      이미지 생성
+      나만의 이미지안 브레인룻 만들기
     </span>
     <span 
-      className="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-sm cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-700"
+      className="px-4 py-2 rounded-full text-sm cursor-pointer transition-all"
+      style={{
+        border: '1px solid #e5e7eb',
+        color: '#6b7280',
+        backgroundColor: 'transparent'
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.backgroundColor = '#f3f4f6';
+        e.currentTarget.style.borderColor = '#d1d5db';
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.backgroundColor = 'transparent';
+        e.currentTarget.style.borderColor = '#e5e7eb';
+      }}
       onClick={() => {
         const searchEntry = document.getElementById('search-bar-entry');
         if (searchEntry) {
@@ -74,17 +102,30 @@ title: "캐럿 AI 헬프센터"
           setTimeout(() => {
             const searchInput = document.querySelector('input[type="search"]');
             if (searchInput) {
-              searchInput.value = '결제 방법';
+              searchInput.value = '나와 닮은 동물 캐릭터는?';
               searchInput.dispatchEvent(new Event('input', { bubbles: true }));
             }
           }, 100);
         }
       }}
     >
-      결제 방법
+      나와 닮은 동물 캐릭터는?
     </span>
     <span 
-      className="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-sm cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-700"
+      className="px-4 py-2 rounded-full text-sm cursor-pointer transition-all"
+      style={{
+        border: '1px solid #e5e7eb',
+        color: '#6b7280',
+        backgroundColor: 'transparent'
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.backgroundColor = '#f3f4f6';
+        e.currentTarget.style.borderColor = '#d1d5db';
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.backgroundColor = 'transparent';
+        e.currentTarget.style.borderColor = '#e5e7eb';
+      }}
       onClick={() => {
         const searchEntry = document.getElementById('search-bar-entry');
         if (searchEntry) {
@@ -92,17 +133,30 @@ title: "캐럿 AI 헬프센터"
           setTimeout(() => {
             const searchInput = document.querySelector('input[type="search"]');
             if (searchInput) {
-              searchInput.value = '팀 공유';
+              searchInput.value = '내 MBTI로 캐릭터 만들기';
               searchInput.dispatchEvent(new Event('input', { bubbles: true }));
             }
           }, 100);
         }
       }}
     >
-      팀 공유
+      내 MBTI로 캐릭터 만들기
     </span>
     <span 
-      className="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-sm cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-700"
+      className="px-4 py-2 rounded-full text-sm cursor-pointer transition-all"
+      style={{
+        border: '1px solid #e5e7eb',
+        color: '#6b7280',
+        backgroundColor: 'transparent'
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.backgroundColor = '#f3f4f6';
+        e.currentTarget.style.borderColor = '#d1d5db';
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.backgroundColor = 'transparent';
+        e.currentTarget.style.borderColor = '#e5e7eb';
+      }}
       onClick={() => {
         const searchEntry = document.getElementById('search-bar-entry');
         if (searchEntry) {
@@ -110,17 +164,30 @@ title: "캐럿 AI 헬프센터"
           setTimeout(() => {
             const searchInput = document.querySelector('input[type="search"]');
             if (searchInput) {
-              searchInput.value = '환불 정책';
+              searchInput.value = '모델이 돌고 있는 제품을 변경해줘';
               searchInput.dispatchEvent(new Event('input', { bubbles: true }));
             }
           }, 100);
         }
       }}
     >
-      환불 정책
+      모델이 돌고 있는 제품을 변경해줘
     </span>
     <span 
-      className="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-sm cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-700"
+      className="px-4 py-2 rounded-full text-sm cursor-pointer transition-all"
+      style={{
+        border: '1px solid #e5e7eb',
+        color: '#6b7280',
+        backgroundColor: 'transparent'
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.backgroundColor = '#f3f4f6';
+        e.currentTarget.style.borderColor = '#d1d5db';
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.backgroundColor = 'transparent';
+        e.currentTarget.style.borderColor = '#e5e7eb';
+      }}
       onClick={() => {
         const searchEntry = document.getElementById('search-bar-entry');
         if (searchEntry) {
@@ -128,14 +195,14 @@ title: "캐럿 AI 헬프센터"
           setTimeout(() => {
             const searchInput = document.querySelector('input[type="search"]');
             if (searchInput) {
-              searchInput.value = '멤버 추가';
+              searchInput.value = '내 상황에 필요한 타로카드';
               searchInput.dispatchEvent(new Event('input', { bubbles: true }));
             }
           }, 100);
         }
       }}
     >
-      멤버 추가
+      내 상황에 필요한 타로카드
     </span>
   </div>
 </div>
@@ -248,3 +315,4 @@ title: "캐럿 AI 헬프센터"
     [자세히 보기](/help/sharing-collaboration)
   </Accordion>
 </AccordionGroup>
+</div>
