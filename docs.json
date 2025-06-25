@@ -3,11 +3,22 @@
   "theme": "mint",
   "name": "캐럿 AI 헬프센터",
   "colors": {
-    "primary": "#007AFF",
-    "light": "#4DA2FF",
-    "dark": "#0051CC"
+    "primary": "#007aff",
+    "light": "#007aff",
+    "dark": "#007aff"
   },
-  "favicon": "/favicon.svg",
+  "background": {
+    "decoration": "gradient"
+  },
+  "favicon": "/favicon.png",
+  "fonts": {
+    "heading": {
+      "family": "Reddit Sans"
+    },
+    "body": {
+      "family": "Reddit Sans"
+    }
+  },
   "navigation": {
     "groups": [
       {
@@ -52,47 +63,58 @@
           "api/endpoints"
         ]
       }
-    ]
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "캐럿 팀",
+          "href": "https://team.carat.im/",
+          "icon": "users"
+        },
+        {
+          "anchor": "블로그",
+          "href": "https://carat.im/blog",
+          "icon": "newspaper"
+        },
+        {
+          "anchor": "채용",
+          "href": "https://carat.career.greetinghr.com/",
+          "icon": "graduation-cap"
+        }
+      ]
+    }
+  },
+  "appearance": {
+    "default": "light"
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/light.avif",
+    "dark": "/logo/dark.svg",
+    "href": "https://carat.im/"
   },
   "navbar": {
     "links": [
       {
-        "label": "캐럿 AI",
+        "label": "캐럿 AI 바로가기",
         "href": "https://caret.ai"
-      },
-      {
-        "label": "업데이트",
-        "href": "https://caret.ai/updates"
-      },
-      {
-        "label": "요금제",
-        "href": "https://caret.ai/pricing"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "무료 시작하기",
-      "href": "https://app.caret.ai/signup"
+      "label": "바로 생성하기",
+      "href": "https://carat.im/create"
     }
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/caretai",
-      "youtube": "https://youtube.com/@caretai",
-      "discord": "https://discord.gg/caretai"
+      "instagram": "https://www.instagram.com/carat.app/",
+      "linkedin": "https://www.linkedin.com/company/paradotcorp/"
     }
   },
   "search": {
-    "prompt": "무엇을 도와드릴까요..."
+    "prompt": "무엇을 도와드릴까요?"
   },
   "feedback": {
     "thumbsRating": true
-  },
-  "custom": {
-    "css": "/maple-custom.css"
   }
 }
