@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "maple",
   "name": "캐럿 AI 헬프센터",
   "colors": {
     "primary": "#6366F1",
@@ -91,12 +91,5 @@
   },
   "feedback": {
     "thumbsRating": true
-  },
-  "modeToggle": {
-    "default": "light"
-  },
-  "custom": {
-    "css": "/custom.css",
-    "js": "/custom.js"
   }
 }
