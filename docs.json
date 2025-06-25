@@ -9,166 +9,50 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "tabs": [
+    "groups": [
       {
-        "tab": "도움말",
-        "groups": [
-          {
-            "group": "시작하기",
-            "icon": "rocket",
-            "pages": [
-              "help/overview",
-              "help/quick-start",
-              "help/first-image"
-            ]
-          }
+        "group": "도움말",
+        "icon": "book-open",
+        "pages": [
+          "index",
+          "help/getting-started",
+          "help/account-billing",
+          "help/image-generation",
+          "help/workspace-settings",
+          "help/sharing-collaboration",
+          "help/troubleshooting"
         ]
       },
       {
-        "tab": "기능 소개",
-        "groups": [
-          {
-            "group": "기능 개요",
-            "icon": "sparkles",
-            "pages": [
-              "features/overview"
-            ]
-          },
-          {
-            "group": "계정 및 결제",
-            "icon": "user-circle",
-            "pages": [
-              "help/account-setup",
-              "help/subscription-plans",
-              "help/payment-methods",
-              "help/refund-policy"
-            ]
-          },
-          {
-            "group": "AI 이미지 생성",
-            "icon": "wand-magic-sparkles",
-            "pages": [
-              "help/image-basics",
-              "help/prompts-guide",
-              "help/styles-effects",
-              "help/image-editing"
-            ]
-          },
-          {
-            "group": "팀 및 공유",
-            "icon": "users",
-            "pages": [
-              "help/team-workspace",
-              "help/sharing-projects",
-              "help/permissions",
-              "help/collaboration"
-            ]
-          },
-          {
-            "group": "문제 해결",
-            "icon": "circle-question",
-            "pages": [
-              "help/troubleshooting",
-              "help/faq",
-              "help/contact-support"
-            ]
-          }
+        "group": "가이드",
+        "icon": "compass",
+        "pages": [
+          "guides/overview",
+          "guides/marketing",
+          "guides/sns-content",
+          "guides/education",
+          "guides/commerce"
         ]
       },
       {
-        "tab": "가이드",
-        "groups": [
-          {
-            "group": "마케팅",
-            "icon": "bullhorn",
-            "pages": [
-              "guides/marketing-overview",
-              "guides/social-media-ads",
-              "guides/youtube-thumbnails",
-              "guides/instagram-posts"
-            ]
-          },
-          {
-            "group": "SNS 콘텐츠",
-            "icon": "share-nodes",
-            "pages": [
-              "guides/viral-content",
-              "guides/meme-creation",
-              "guides/stories-reels"
-            ]
-          },
-          {
-            "group": "교육",
-            "icon": "graduation-cap",
-            "pages": [
-              "guides/educational-content",
-              "guides/presentation-design",
-              "guides/infographics"
-            ]
-          },
-          {
-            "group": "커머스",
-            "icon": "shopping-bag",
-            "pages": [
-              "guides/product-photography",
-              "guides/promotional-banners",
-              "guides/catalog-design"
-            ]
-          }
+        "group": "캐럿 아카데미",
+        "icon": "graduation-cap",
+        "pages": [
+          "academy/overview",
+          "academy/beginner-course",
+          "academy/pro-tips"
         ]
       },
       {
-        "tab": "캐럿 아카데미",
-        "groups": [
-          {
-            "group": "초급 과정",
-            "icon": "seedling",
-            "pages": [
-              "academy/getting-started-video",
-              "academy/basic-techniques",
-              "academy/first-project-tutorial"
-            ]
-          },
-          {
-            "group": "중급 과정",
-            "icon": "fire",
-            "pages": [
-              "academy/advanced-prompting",
-              "academy/style-mastery",
-              "academy/workflow-optimization"
-            ]
-          },
-          {
-            "group": "전문가 팁",
-            "icon": "star",
-            "pages": [
-              "academy/pro-secrets",
-              "academy/case-studies",
-              "academy/industry-insights"
-            ]
-          }
+        "group": "API",
+        "icon": "code",
+        "pages": [
+          "api/introduction",
+          "api/authentication",
+          "api/endpoints"
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "업데이트",
-          "href": "https://caret.ai/updates",
-          "icon": "megaphone"
-        },
-        {
-          "anchor": "커뮤니티",
-          "href": "https://discord.gg/caretai",
-          "icon": "discord"
-        },
-        {
-          "anchor": "YouTube",
-          "href": "https://youtube.com/@caretai",
-          "icon": "youtube"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
@@ -177,8 +61,16 @@
   "navbar": {
     "links": [
       {
-        "label": "캐럿 AI 바로가기",
+        "label": "캐럿 AI",
         "href": "https://caret.ai"
+      },
+      {
+        "label": "업데이트",
+        "href": "https://caret.ai/updates"
+      },
+      {
+        "label": "요금제",
+        "href": "https://caret.ai/pricing"
       }
     ],
     "primary": {
@@ -191,14 +83,13 @@
     "socials": {
       "x": "https://x.com/caretai",
       "youtube": "https://youtube.com/@caretai",
-      "linkedin": "https://linkedin.com/company/caretai"
+      "discord": "https://discord.gg/caretai"
     }
   },
   "search": {
-    "prompt": "검색하기"
+    "prompt": "무엇을 도와드릴까요..."
   },
   "feedback": {
-    "thumbsRating": true,
-    "suggestEdit": false
+    "thumbsRating": true
   }
 }
