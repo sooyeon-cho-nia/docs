@@ -1,55 +1,145 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "캐럿 AI 헬프센터",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#6366F1",
+    "light": "#8B5CF6",
+    "dark": "#4F46E5"
   },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "시작하기",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "처음 시작하기",
+            "icon": "rocket",
             "pages": [
               "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Essentials",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              "getting-started/introduction",
+              "getting-started/quick-start",
+              "getting-started/account-setup",
+              "getting-started/first-project"
             ]
           }
         ]
       },
       {
-        "tab": "API Reference",
+        "tab": "기능 소개",
         "groups": [
           {
-            "group": "API Documentation",
+            "group": "기능 개요",
+            "icon": "sparkles",
             "pages": [
-              "api-reference/introduction"
+              "features/overview"
             ]
           },
           {
-            "group": "Endpoint Examples",
+            "group": "AI 이미지 생성",
+            "icon": "image",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "features/image-generation/basics",
+              "features/image-generation/advanced",
+              "features/image-generation/styles"
+            ]
+          },
+          {
+            "group": "계정 관리",
+            "icon": "user",
+            "pages": [
+              "features/account/profile",
+              "features/account/team",
+              "features/account/security"
+            ]
+          },
+          {
+            "group": "결제 및 구독",
+            "icon": "credit-card",
+            "pages": [
+              "features/billing/plans",
+              "features/billing/payment",
+              "features/billing/refund"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "활용 가이드",
+        "groups": [
+          {
+            "group": "시작하기",
+            "icon": "lightbulb",
+            "pages": [
+              "use-cases/overview"
+            ]
+          },
+          {
+            "group": "마케팅",
+            "icon": "bullhorn",
+            "tag": "인기",
+            "pages": [
+              "use-cases/marketing/short-form-ads",
+              "use-cases/marketing/thumbnails",
+              "use-cases/marketing/social-media"
+            ]
+          },
+          {
+            "group": "SNS 콘텐츠",
+            "icon": "share-nodes",
+            "pages": [
+              "use-cases/sns/pov-videos",
+              "use-cases/sns/memes",
+              "use-cases/sns/stories"
+            ]
+          },
+          {
+            "group": "교육",
+            "icon": "graduation-cap",
+            "pages": [
+              "use-cases/education/podcasts",
+              "use-cases/education/presentations",
+              "use-cases/education/tutorials"
+            ]
+          },
+          {
+            "group": "커머스",
+            "icon": "shopping-cart",
+            "pages": [
+              "use-cases/commerce/product-shots",
+              "use-cases/commerce/product-videos",
+              "use-cases/commerce/catalogs"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "문제 해결",
+        "groups": [
+          {
+            "group": "문제 해결하기",
+            "icon": "wrench",
+            "pages": [
+              "troubleshooting/common-issues",
+              "troubleshooting/generation-errors",
+              "troubleshooting/account-issues",
+              "troubleshooting/payment-issues",
+              "troubleshooting/contact-support"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "공지사항",
+        "groups": [
+          {
+            "group": "최신 소식",
+            "icon": "megaphone",
+            "pages": [
+              "announcements/updates",
+              "announcements/new-features",
+              "announcements/maintenance"
             ]
           }
         ]
@@ -58,18 +148,18 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "유튜브 채널",
+          "href": "https://youtube.com/@caretai",
+          "icon": "youtube"
         },
         {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
+          "anchor": "커뮤니티",
+          "href": "https://discord.gg/caretai",
+          "icon": "discord"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
+          "anchor": "블로그",
+          "href": "https://blog.caret.ai",
           "icon": "newspaper"
         }
       ]
@@ -82,21 +172,33 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "캐럿 AI 바로가기",
+        "href": "https://caret.ai"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "고객센터",
+      "href": "https://caret.ai/support"
     }
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/caretai",
+      "github": "https://github.com/caretai",
+      "linkedin": "https://linkedin.com/company/caretai"
+    }
+  },
+  "search": {
+    "prompt": "무엇을 도와드릴까요?"
+  },
+  "feedback": {
+    "thumbsRating": true,
+    "suggestEdit": true
+  },
+  "analytics": {
+    "ga4": {
+      "measurementId": "G-XXXXXXXXXX"
     }
   }
 }
