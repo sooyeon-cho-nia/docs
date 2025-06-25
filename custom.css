@@ -1,100 +1,95 @@
-/* 상단 네비게이션의 검색창 숨기기 */
-nav [type="search"],
-nav .search-container,
-header [role="search"] {
-  display: none !important;
-}
-
-/* 메인 페이지에만 커스텀 검색창 표시 */
-.custom-search-container {
-  max-width: 680px;
-  margin: 0 auto 2rem auto;
-  position: relative;
-}
-
-.custom-search-input {
-  width: 100%;
-  padding: 1rem 1.5rem;
-  font-size: 1.125rem;
-  border: 1px solid #e5e7eb;
-  border-radius: 0.5rem;
-  background-color: #f9fafb;
-  transition: all 0.2s;
-}
-
-.custom-search-input:focus {
-  outline: none;
-  border-color: #6366f1;
-  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
-}
-
-/* 다크모드 지원 */
-.dark .custom-search-input {
-  background-color: #1f2937;
-  border-color: #374151;
-  color: #f3f4f6;
-}
-
-.dark .custom-search-input:focus {
-  border-color: #8b5cf6;
-  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
-}
-
-/* 검색 태그 스타일 */
-.search-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  justify-content: center;
-  margin-top: 1rem;
-}
-
-.search-tag {
-  padding: 0.5rem 1rem;
-  background-color: #f3f4f6;
-  border-radius: 9999px;
-  font-size: 0.875rem;
-  cursor: pointer;
-  transition: all 0.2s;
-  border: 1px solid transparent;
-}
-
-.search-tag:hover {
-  background-color: #e5e7eb;
-  border-color: #6366f1;
-}
-
-.dark .search-tag {
-  background-color: #374151;
-  color: #f3f4f6;
-}
-
-.dark .search-tag:hover {
-  background-color: #4b5563;
-  border-color: #8b5cf6;
-}
-
-/* 메인 타이틀 스타일 */
-.main-title {
-  text-align: center;
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-  color: #111827;
-}
-
-.dark .main-title {
-  color: #f9fafb;
-}
-
-/* 반응형 디자인 */
-@media (max-width: 768px) {
-  .main-title {
-    font-size: 2rem;
-  }
-  
-  .custom-search-input {
-    font-size: 1rem;
-    padding: 0.75rem 1rem;
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "maple",
+  "name": "캐럿 AI 헬프센터",
+  "colors": {
+    "primary": "#6366F1",
+    "light": "#8B5CF6",
+    "dark": "#4F46E5"
+  },
+  "favicon": "/favicon.svg",
+  "navigation": {
+    "groups": [
+      {
+        "group": "도움말",
+        "icon": "book-open",
+        "pages": [
+          "index",
+          "help/getting-started",
+          "help/account-billing",
+          "help/image-generation",
+          "help/workspace-settings",
+          "help/sharing-collaboration",
+          "help/troubleshooting"
+        ]
+      },
+      {
+        "group": "가이드",
+        "icon": "compass",
+        "pages": [
+          "guides/overview",
+          "guides/marketing",
+          "guides/sns-content",
+          "guides/education",
+          "guides/commerce"
+        ]
+      },
+      {
+        "group": "캐럿 아카데미",
+        "icon": "graduation-cap",
+        "pages": [
+          "academy/overview",
+          "academy/beginner-course",
+          "academy/pro-tips"
+        ]
+      },
+      {
+        "group": "API",
+        "icon": "code",
+        "pages": [
+          "api/introduction",
+          "api/authentication",
+          "api/endpoints"
+        ]
+      }
+    ]
+  },
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "캐럿 AI",
+        "href": "https://caret.ai"
+      },
+      {
+        "label": "업데이트",
+        "href": "https://caret.ai/updates"
+      },
+      {
+        "label": "요금제",
+        "href": "https://caret.ai/pricing"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "무료 시작하기",
+      "href": "https://app.caret.ai/signup"
+    }
+  },
+  "footer": {
+    "socials": {
+      "x": "https://x.com/caretai",
+      "youtube": "https://youtube.com/@caretai",
+      "discord": "https://discord.gg/caretai"
+    }
+  },
+  "search": {
+    "prompt": "무엇을 도와드릴까요..."
+  },
+  "feedback": {
+    "thumbsRating": true
   }
 }
