@@ -174,10 +174,6 @@
     "suggestEdit": true,
     "raiseIssue": true
   },
-  "i18n": {
-    "default": "ko",
-    "locales": ["ko", "en", "ja"]
-  },
   "analytics": {
     "ga4": {
       "measurementId": "G-XXXXXXXXXX"
