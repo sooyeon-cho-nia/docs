@@ -1,0 +1,132 @@
+---
+title: "길거리 인터뷰 영상 만들기"
+description: "VEO3로 바이럴 길거리 인터뷰 영상을 제작하는 방법과 실용적인 프롬프트 작성 가이드"
+icon: "video"
+---
+
+구글 VEO3를 활용해서 SNS에서 인기 있는 반전 길거리 인터뷰 영상을 만드는 방법을 알려드려요. 정교한 오디오와 립싱크 기능으로 실제 같은 인터뷰 영상을 만들 수 있어요.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/j49f99S9O8g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen className="rounded-lg shadow-lg mb-8"></iframe>
+
+<img src="https://carat-assets.s3.ap-northeast-2.amazonaws.com/sooyeon/2025_blog/veo3-interview.webp" alt="길거리 인터뷰 영상 예시" className="rounded-lg shadow-lg mb-8" />
+
+<Steps>
+  <Step title="VEO3 모델 선택">
+    캐럿 AI에 접속해서 상단의 AI 모델 중 '구글 비오'를 선택해요. VEO3는 대사와 입 모양이 완벽하게 동기화되고, 자연스러운 음성을 생성할 수 있는 게 특징이에요.
+  </Step>
+  
+  <Step title="반전 인터뷰 시나리오 구성">
+    예상과 다른 반전 답변으로 재미를 주는 시나리오를 구성해요. 시청자의 예상을 뒤엎는 반전 요소가 바이럴 성공의 핵심이에요.
+    
+    <Tabs>
+      <Tab title="나이별 반전">
+        - 할머니가 최신 힙합 음악 언급
+        - 어린이가 클래식 음악 선호
+        - 중년이 게임 캐릭터 좋아한다고 답변
+      </Tab>
+      <Tab title="직업별 반전">
+        - 의사가 음식 관련 취미 언급
+        - 요리사가 의학 지식 자랑
+        - 학생이 비즈니스 조언 제공
+      </Tab>
+      <Tab title="상황별 반전">
+        - 진부한 질문에 예상 밖 대답
+        - 심각한 분위기에서 유머러스한 답변
+        - 일상적 주제에 철학적 접근
+      </Tab>
+    </Tabs>
+  </Step>
+  
+  <Step title="프롬프트 작성 및 생성">
+    인터뷰 장면을 구체적으로 묘사해서 프롬프트를 작성해요.
+    
+    <RequestExample>
+      ```text 프롬프트 예시
+      대한민국 서울, 길거리 인터뷰 영상, 화면 우측에는 마이크를 들고있는 기자가 서있고, 왼쪽에는 헤드셋을 착용한 70세의 대한민국 할머니가 서있는 모습, 자막은 없는 영상. 할머니는 꽃패턴의 보라색 티셔츠를 입고있다. 기자가 할머니에게 질문한다:"가장 좋아하는 음악이 뭐에요?"(대사는 반드시 한국어) 할머니는 웃으면서 답한다:"플레이보이 카티의 'Teen X'"(대사는 반드시 한국어)
+      ```
+    </RequestExample>
+    
+    <Tip>
+      대사 끝에 "(대사는 반드시 한국어)"를 명시하면 한국어 음성 생성 성공률이 크게 높아져요.
+    </Tip>
+  </Step>
+  
+  <Step title="추가 클립 제작">
+    인터뷰 영상에 더해 역동적인 장면을 추가해서 콘텐츠를 더 풍부하게 만들어요. 다른 AI 모델(Kling, Runway 등)과 조합하면 더욱 다채로운 영상을 만들 수 있어요.
+    
+    <RequestExample>
+      ```text 프롬프트 예시
+      시네마틱, 카메라 위치 고정, 빠른 속도로 미소 짓고 오토바이를 타고 이동하는 할머니의 모습, 속도감 느껴지는 영상을 만들어줘. Kling 2.1 모델을 사용해줘.
+      ```
+    </RequestExample>
+  </Step>
+  
+  <Step title="편집 및 완성">
+    생성된 클립들을 편집해서 하나의 완성된 숏폼 콘텐츠로 만들어요.
+    
+    <img src="https://carat-assets.s3.ap-northeast-2.amazonaws.com/sooyeon/2025_blog/veo3-result.webp" alt="완성된 길거리 인터뷰 영상" className="rounded-lg shadow-lg" />
+  </Step>
+</Steps>
+
+## 프롬프트 작성 팁
+
+프롬프트를 작성할 때는 다음 요소들을 포함해야 해요.
+
+- **장소 설정**: 구체적인 위치와 배경
+- **인물 묘사**: 나이, 복장, 표정
+- **대화 내용**: 질문과 답변을 명확하게 구분
+- **기술적 요소**: 카메라 앵글, 자막 유무
+
+## 다양한 인터뷰 시나리오
+
+<Tabs>
+  <Tab title="음식 관련">
+    - "가장 좋아하는 음식은?" → "3일 굶은 라면"
+    - "건강한 식습관 팁은?" → "매일 치킨 먹기"
+    - "다이어트 비결은?" → "스트레스 받으면 폭식"
+  </Tab>
+  <Tab title="취미 관련">
+    - "취미가 뭐에요?" → "밤새 게임하기"
+    - "운동 좋아해요?" → "리모컨 누르기 운동"
+    - "독서 습관은?" → "웹툰만 봐요"
+  </Tab>
+  <Tab title="인생 조언">
+    - "인생 조언 한 마디?" → "그냥 아무거나 해"
+    - "성공 비결은?" → "운빨"
+    - "젊은이들에게 한 말씀?" → "나도 모르겠어"
+  </Tab>
+</Tabs>
+
+## 영상 제작 사례
+
+<CardGroup cols={2}>
+  <Card title="역사 재현" icon="clock" href="#">
+    조선시대 먹방, 고려시대 패션쇼 등 역사적 배경 활용
+  </Card>
+  
+  <Card title="게임 실사화" icon="gamepad" href="#">
+    GTA 한양, 조선 배경 RPG 등 게임 컨셉 구현
+  </Card>
+  
+  <Card title="가상 광고" icon="bullhorn" href="#">
+    상상 속 브랜드나 제품의 창의적 광고 영상
+  </Card>
+  
+  <Card title="팬 콘텐츠" icon="heart" href="#">
+    가상 아이돌 팬미팅, 셀럽 인터뷰 등 팬덤 콘텐츠
+  </Card>
+</CardGroup>
+
+## 자주 묻는 질문
+
+<AccordionGroup>
+<Accordion title="구글 VEO3와 다른 AI 모델의 차이점은 무엇인가요?">
+각 AI 모델은 학습 데이터와 기술이 달라서 저마다의 강점을 가져요. VEO3는 사실적인 오디오와 립싱크 구현에 특히 강하고, Kling은 역동적인 움직임과 시네마틱한 질감 표현에 뛰어나요. 캐럿 AI에서는 만들고 싶은 영상 스타일에 맞춰 최적의 모델을 선택해서 사용할 수 있어요.
+</Accordion>
+<Accordion title="한국어 대사가 제대로 생성되나요?">
+네, 구글 VEO3는 텍스트를 음성으로 변환하는 기능이 매우 뛰어나요. 아직 100% 완벽하다고 할 수는 없지만, "(대사는 반드시 한국어)" 공식을 활용하면 매우 높은 확률로 자연스러운 한국어 대사가 포함된 영상을 얻을 수 있어요.
+</Accordion>
+<Accordion title="VEO3 사용 비용은 어떻게 되나요?">
+VEO3와 같은 고성능 AI 모델은 일반적으로 사용 비용이 높은 편이에요. 하지만 캐럿 AI는 사용자들이 부담 없이 최신 AI 기술을 경험할 수 있도록 무료로 체험 가능한 크레딧을 제공하고 있으며, 필요 시 합리적인 가격의 유료 플랜을 통해 더 많은 창작 활동을 지원해요.
+</Accordion>
+</AccordionGroup>

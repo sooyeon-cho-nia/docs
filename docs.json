@@ -30,33 +30,197 @@
       {
         "group": "샘플",
         "pages": [
-          "index",
           "ko/articles/0626",
           "ko/articles/0625"
         ]
       },
       {
-        "group": "캐럿 시작하기",
+        "group": "도움말",
         "pages": [
-          "getting-started/what-is-carat",
-          "getting-started/quick-start",
-          "getting-started/features-overview"
+          {
+            "group": "캐럿 시작하기",
+            "pages": [
+              "help/getting-started/what-is-carat",
+              "help/getting-started/quick-start",
+              "help/getting-started/features-overview"
+            ]
+          },
+          {
+            "group": "캐럿 AI",
+            "pages": [
+              {
+                "group": "AI 대화",
+                "pages": [
+                  "help/ai-chat/getting-started",
+                  "help/ai-chat/advanced"
+                ]
+              },
+              {
+                "group": "AI 이미지 만들기",
+                "pages": [
+                  "help/ai-image/getting-started",
+                  "help/ai-image/advanced"
+                ]
+              },
+              {
+                "group": "AI 영상 만들기",
+                "pages": [
+                  "help/ai-video/getting-started",
+                  "help/ai-video/advanced"
+                ]
+              },
+              {
+                "group": "AI 오디오 만들기",
+                "pages": [
+                  "help/ai-audio/text-to-speech",
+                  "help/ai-audio/background-music",
+                  "help/ai-audio/song-with-lyrics",
+                  "help/ai-audio/sound-effects"
+                ]
+              },
+              {
+                "group": "AI 에이전트 사용하기",
+                "pages": [
+                  "help/ai-agent/what-is-agent",
+                  "help/ai-agent/create-from-idea",
+                  "help/ai-agent/create-from-search",
+                  "help/ai-agent/create-from-reference",
+                  "help/ai-agent/create-from-plan"
+                ]
+              },
+              {
+                "group": "고급 기능",
+                "pages": [
+                  "help/advanced/model-selection",
+                  "help/advanced/model-guide"
+                ]
+              },
+              {
+                "group": "결과물 관리",
+                "pages": [
+                  "help/results/library",
+                  "help/results/save-delete"
+                ]
+              },
+              {
+                "group": "문제 해결",
+                "pages": [
+                  "help/troubleshooting/creation-failed",
+                  "help/troubleshooting/unexpected-results",
+                  "help/troubleshooting/slow-speed"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "AI 프로필",
+            "pages": [
+              "help/ai-profile/create-profile",
+              "help/ai-profile/upload-photo",
+              "help/ai-profile/train-profile",
+              "help/ai-profile/troubleshooting"
+            ]
+          },
+          {
+            "group": "AI 채팅",
+            "pages": [
+              "help/chat/ai-chat",
+              "help/chat/create-character",
+              "help/chat/troubleshooting"
+            ]
+          },
+          {
+            "group": "요금제/사용량",
+            "pages": [
+              "help/pricing/plan-comparison",
+              "help/pricing/usage-guide",
+              "help/pricing/subscription",
+              "help/pricing/payment-refund"
+            ]
+          },
+          {
+            "group": "이용 정책",
+            "pages": [
+              "help/policy/copyright",
+              "help/policy/privacy",
+              "help/policy/guidelines"
+            ]
+          },
+          {
+            "group": "커뮤니티",
+            "pages": [
+              "help/community/upload-post",
+              "help/community/follow-feed",
+              "help/community/report-block"
+            ]
+          },
+          {
+            "group": "계정 관리",
+            "pages": [
+              "help/account/login-issues",
+              "help/account/device-change",
+              "help/account/delete-account",
+              "help/account/notification-settings"
+            ]
+          }
         ]
       },
       {
-        "group": "캐럿 AI",
+        "group": "활용 가이드",
         "pages": [
-          "carat-ai/ai-chat",
-          "carat-ai/ai-image",
-          "carat-ai/ai-video",
-          "carat-ai/ai-audio"
-        ]
-      },
-      {
-        "group": "AI 프로필",
-        "pages": [
-          "ai-profile/create-profile",
-          "ai-profile/upload-face"
+          {
+            "group": "마케터",
+            "pages": [
+              "guides/marketer",
+              "guides/marketer/food-photography",
+              "guides/marketer/ad-model",
+              "guides/marketer/product-photography",
+              "guides/marketer/brand-character",
+              "guides/marketer/outdoor-ad",
+              "guides/marketer/book-trailer",
+              "guides/marketer/shopping-mall",
+              "guides/marketer/card-news",
+              "guides/marketer/storyboard",
+              "guides/marketer/book-promotion",
+              "guides/marketer/beauty-marketing",
+              "guides/marketer/3d-poster"
+            ]
+          },
+          {
+            "group": "크리에이터",
+            "pages": [
+              "guides/creator",
+              "guides/creator/asmr-video",
+              "guides/creator/podcast",
+              "guides/creator/street-interview",
+              "guides/creator/pet-daily",
+              "guides/creator/first-person",
+              "guides/creator/news-opening",
+              "guides/creator/miniature",
+              "guides/creator/youtube-thumbnail"
+            ]
+          },
+          {
+            "group": "디자이너",
+            "pages": [
+              "guides/designer",
+              "guides/designer/logo",
+              "guides/designer/3d-icon",
+              "guides/designer/3d-typography",
+              "guides/designer/product-mockup"
+            ]
+          },
+          {
+            "group": "개인/취미",
+            "pages": [
+              "guides/personal",
+              "guides/personal/id-photo",
+              "guides/personal/future-baby",
+              "guides/personal/pet-humanize",
+              "guides/personal/drawing-animation",
+              "guides/personal/italian-brainrot"
+            ]
+          }
         ]
       }
     ]

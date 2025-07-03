@@ -1,0 +1,142 @@
+---
+title: "AI 팟캐스트 만들기"
+description: "구글 VEO3로 마이크나 장비 없이 시각적 요소가 포함된 팟캐스트 콘텐츠를 제작하는 방법"
+icon: "microphone"
+---
+
+AI 기술을 활용해서 전문 장비나 출연자 없이도 고품질의 '보이는 팟캐스트' 콘텐츠를 제작하는 방법을 알려드려요. 텍스트 입력만으로 기획부터 영상 제작까지 완성할 수 있어요.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xAzb-P0w-8o?si=0XVJvILmNkmXWPJG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen className="rounded-lg shadow-lg mb-8"></iframe>
+
+<img src="https://carat-assets.s3.ap-northeast-2.amazonaws.com/sooyeon/2025_blog/podcast-preview.webp" alt="AI 팟캐스트 예시" className="rounded-lg shadow-lg mb-8" />
+
+<Steps>
+  <Step title="기획 및 대본 작성">
+    팟캐스트의 주제, 등장인물, 대화 내용을 구상해요. 주제 선정, 캐릭터 설정, 대화 흐름 구성이 핵심 요소예요.
+    
+    <Tabs>
+      <Tab title="교육 콘텐츠">
+        - 역사 속 인물과의 대화 (세종대왕, 이순신 등)
+        - 외국어 학습 대화 (원어민과 한국인 캐릭터)
+        - 전문 지식 해설 (의료, 법률, 기술 등)
+      </Tab>
+      <Tab title="엔터테인먼트">
+        - 가상 인물 인터뷰 (소설 캐릭터, 창작 인물)
+        - 제품/서비스 리뷰 쇼
+        - 책/영화 토론 프로그램
+      </Tab>
+      <Tab title="특수 캐릭터">
+        - 말하는 동물 캐릭터
+        - 게임 캐릭터 인터뷰
+        - SF/판타지 설정의 대화
+      </Tab>
+    </Tabs>
+    
+    <Tip>
+      기획이 막막하다면 "MZ세대에게 인기 있을 만한 팟캐스트 주제 5가지 추천해 줘"와 같이 AI에게 아이디어를 요청해보세요.
+    </Tip>
+  </Step>
+  
+  <Step title="VEO3 모델 선택">
+    캐럿 AI에서 상단의 AI 모델 중 '구글 비오'를 선택해요. VEO3는 대사와 입 모양을 완벽하게 매칭하고, 4K 화질을 지원하며, 자연스러운 한국어 음성을 생성할 수 있어요.
+  </Step>
+  
+  <Step title="진행자 장면 제작">
+    진행자의 오프닝 멘트나 질문 장면을 생성해요.
+    
+    <RequestExample>
+      ```text 프롬프트 예시
+      유튜브 팟캐스트 영상 장면, 흰색의 스튜디오 벽, 방송용 헤드셋을 착용하고 오른쪽 방향을 바라보며 말을하고 있는 짙은 콧수염의 근육질 몸의 40세 미국인 남자의 모습. 남자의 티셔츠에는 파란색 글씨고 'carat'이라고 적혀있다.
+      남자는 웃으면서 말을 한다: "오늘의 게스트! 말하는 고양이 캐롯님 안녕하세요."
+      (대사는 반드시 한국어, 대한민국 언어로 음성 생성해주세요.)
+      ```
+    </RequestExample>
+    
+    <Tip>
+      한국어 대사 생성 시 프롬프트 끝에 "(대사는 반드시 한국어)"를 명시하면 성공률이 높아져요.
+    </Tip>
+  </Step>
+  
+  <Step title="게스트 답변 장면 제작">
+    게스트의 답변이나 리액션 장면을 생성해요. 진행자와 게스트가 서로 다른 방향을 바라보도록 설정하면 대화하는 느낌이 더욱 자연스러워요.
+    
+    <RequestExample>
+      ```text 프롬프트 예시
+      유튜브 팟캐스트 영상 장면, 흰색의 스튜디오 벽, 방송용 헤드셋을 착용하고 왼쪽 방향을 바라보며 말을하고 있는 주황색 고양이 캐릭터의 모습. 
+      고양이는 미소를 지으며 말을 한다: "안녕하세요! 오늘 이런 좋은 자리에 초대해 주셔서 감사합니다."
+      (대사는 반드시 한국어, 대한민국 언어로 음성 생성해주세요.)
+      ```
+    </RequestExample>
+  </Step>
+  
+  <Step title="영상 편집 및 완성">
+    생성된 클립들을 편집 도구로 이어붙여서 완성해요.
+    
+    <img src="https://carat-assets.s3.ap-northeast-2.amazonaws.com/sooyeon/2025_blog/podcast-result.webp" alt="완성된 AI 팟캐스트" className="rounded-lg shadow-lg" />
+  </Step>
+</Steps>
+
+## 프롬프트 작성 팁
+
+프롬프트를 작성할 때는 다음 요소들을 포함해야 해요.
+
+- **장면 설정**: 스튜디오 배경, 조명
+- **캐릭터 묘사**: 외모, 복장, 액세서리
+- **대사 및 표정**: 구체적인 말투와 감정 표현
+
+## 캐릭터 설정 예시
+
+<Tabs>
+  <Tab title="전문가 캐릭터">
+    - 의사: 흰 가운을 입고 청진기를 목에 건 중년 남성
+    - 셰프: 요리사 모자와 앞치마를 착용한 요리 전문가
+    - 교수: 안경을 쓰고 정장을 입은 학자 스타일
+  </Tab>
+  <Tab title="동물 캐릭터">
+    - 말하는 고양이: 헤드셋을 착용한 주황색 고양이
+    - 지혜로운 부엉이: 안경을 쓰고 책을 들고 있는 부엉이
+    - 유머러스한 강아지: 넥타이를 매고 웃고 있는 골든 리트리버
+  </Tab>
+  <Tab title="역사 인물">
+    - 세종대왕: 한복을 입고 위엄있는 표정의 조선 시대 왕
+    - 이순신: 갑옷을 입고 결의에 찬 표정의 장군
+    - 에디슨: 실험실에서 전구를 들고 있는 발명가
+  </Tab>
+</Tabs>
+
+## 팟캐스트 주제 아이디어
+
+<CardGroup cols={2}>
+  <Card title="교육 콘텐츠" icon="graduation-cap" href="#">
+    역사, 과학, 외국어 등 학습 목적의 대화형 콘텐츠
+  </Card>
+  
+  <Card title="리뷰 프로그램" icon="star" href="#">
+    제품, 서비스, 책, 영화 등에 대한 전문가 리뷰
+  </Card>
+  
+  <Card title="토론 프로그램" icon="comments" href="#">
+    다양한 주제에 대한 찬반 토론이나 의견 교환
+  </Card>
+  
+  <Card title="인터뷰 쇼" icon="users" href="#">
+    가상 인물이나 캐릭터와의 심층 인터뷰
+  </Card>
+</CardGroup>
+
+## 자주 묻는 질문
+
+<AccordionGroup>
+<Accordion title="AI 팟캐스트와 일반 팟캐스트의 차이점은 무엇인가요?">
+AI 팟캐스트는 전문 장비나 출연자 없이도 제작할 수 있어요. 특히 현실에서는 불가능한 게스트(역사 인물, 가상 캐릭터 등)와의 대화를 구현할 수 있다는 점이 큰 장점이에요.
+</Accordion>
+<Accordion title="한국어 음성 품질은 어떤가요?">
+VEO3는 한국어 음성 생성 기능이 뛰어나요. 프롬프트에 "(대사는 반드시 한국어)"를 명시하면 매우 자연스러운 한국어 음성을 얻을 수 있어요.
+</Accordion>
+<Accordion title="팟캐스트 영상 길이는 얼마나 되나요?">
+각 클립은 보통 8-15초 정도 생성되며, 이를 여러 개 연결해서 원하는 길이의 팟캐스트를 만들 수 있어요. 유튜브나 팟캐스트 플랫폼에 맞춰 5-30분 정도의 에피소드를 제작할 수 있어요.
+</Accordion>
+<Accordion title="상업적으로 활용할 수 있나요?">
+생성된 AI 팟캐스트는 상업적으로 활용 가능해요. 기업의 마케팅 콘텐츠, 교육 자료, 브랜드 홍보 영상 등으로 활용할 수 있어요.
+</Accordion>
+</AccordionGroup>
