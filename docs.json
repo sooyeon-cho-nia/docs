@@ -2,6 +2,7 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "maple",
   "name": "캐럿 AI 헬프센터",
+  "favicon": "/favicon.svg",
   "colors": {
     "primary": "#007aff",
     "light": "#007aff",
@@ -10,7 +11,6 @@
   "background": {
     "decoration": "gradient"
   },
-  "favicon": "/favicon.png",
   "fonts": {
     "heading": {
       "family": "Reddit Sans"
@@ -22,73 +22,50 @@
   "navigation": {
     "groups": [
       {
-        "group": "도움말",
-        "icon": "book-open",
+        "group": "홈",
+        "pages": [
+          "index"
+        ]
+      },
+      {
+        "group": "샘플",
         "pages": [
           "index",
-          "help/getting-started",
-          "help/account-billing",
-          "help/image-generation",
-          "help/workspace-settings",
-          "help/sharing-collaboration",
-          "help/troubleshooting"
+          "ko/articles/0626",
+          "ko/articles/0625"
         ]
       },
       {
-        "group": "가이드",
-        "icon": "compass",
+        "group": "캐럿 시작하기",
         "pages": [
-          "guides/overview",
-          "guides/marketing",
-          "guides/sns-content",
-          "guides/education",
-          "guides/commerce"
+          "getting-started/what-is-carat",
+          "getting-started/quick-start",
+          "getting-started/features-overview"
         ]
       },
       {
-        "group": "캐럿 아카데미",
-        "icon": "graduation-cap",
+        "group": "캐럿 AI",
         "pages": [
-          "academy/overview",
-          "academy/beginner-course",
-          "academy/pro-tips"
+          "carat-ai/ai-chat",
+          "carat-ai/ai-image",
+          "carat-ai/ai-video",
+          "carat-ai/ai-audio"
         ]
       },
       {
-        "group": "API",
-        "icon": "code",
+        "group": "AI 프로필",
         "pages": [
-          "api/introduction",
-          "api/authentication",
-          "api/endpoints"
+          "ai-profile/create-profile",
+          "ai-profile/upload-face"
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "캐럿 팀",
-          "href": "https://team.carat.im/",
-          "icon": "users"
-        },
-        {
-          "anchor": "블로그",
-          "href": "https://carat.im/blog",
-          "icon": "newspaper"
-        },
-        {
-          "anchor": "채용",
-          "href": "https://carat.career.greetinghr.com/",
-          "icon": "graduation-cap"
-        }
-      ]
-    }
+    ]
   },
   "appearance": {
     "default": "light"
   },
   "logo": {
-    "light": "/logo/light.avif",
+    "light": "/logo/light.svg",
     "dark": "/logo/dark.svg",
     "href": "https://carat.im/"
   },
