@@ -1,0 +1,89 @@
+---
+title: "광고 상품 연출컷 만들기"
+description: "제품 누끼컷 이미지를 다양한 배경과 합성하여 광고용 연출컷을 제작하는 방법"
+icon: "camera"
+---
+
+이 가이드는 제품 누끼컷 이미지를 다양한 배경과 합성하여 광고용 연출컷을 제작하는 방법을 안내합니다. 스튜디오 촬영 없이도 전문적인 제품 사진을 빠르게 만들 수 있습니다.
+
+<img src="https://carat-assets.s3.ap-northeast-2.amazonaws.com/sooyeon/2025_blog/0613.webp" alt="제품 원본 이미지 준비" className="rounded-lg shadow-lg mb-8" />
+
+<Steps>
+  <Step title="제품 이미지 업로드">
+    배경이 완전히 제거된 고해상도 제품 이미지(PNG)를 캐럿 AI에 업로드합니다.
+    
+    <Info>
+      **준비물**: 제품의 형태와 디테일이 명확한 누끼컷 이미지
+    </Info>
+    
+    <Tip>
+      원본 해상도가 낮은 경우, 업스케일 기능을 사용하여 이미지 품질을 향상시킬 수 있습니다.
+    </Tip>
+  </Step>
+  
+  <Step title="배경 프롬프트 작성">
+    원하는 배경과 분위기를 구체적으로 설명합니다.
+    
+    <Tabs>
+      <Tab title="음료">
+        - 파란 하늘과 구름 배경에 서리가 맺힌 캔
+        - 얼음과 물방울, 청량감을 주는 배경
+        - 해변이나 수영장 주변의 상쾌한 분위기
+      </Tab>
+      <Tab title="전자제품">
+        - 모던한 스튜디오, 미니멀한 실내 공간
+        - 하이테크 느낌의 추상적 배경
+        - 네온 조명이 있는 미래적인 공간
+      </Tab>
+      <Tab title="화장품">
+        - 대리석 테이블 위, 자연광이 들어오는 공간
+        - 꽃과 식물이 있는 자연스러운 배경
+        - 고급스러운 분위기의 뷰티 스튜디오
+      </Tab>
+    </Tabs>
+    
+    <Card title="프롬프트 작성 요령">
+      **배경**: 장소, 환경, 시간대 | **조명**: 자연광, 스튜디오 조명 | **분위기**: 청량감, 고급스러움
+    </Card>
+  </Step>
+  
+  <Step title="필수 문구 추가">
+    프롬프트 마지막에 다음 문구를 반드시 추가합니다:
+    
+    **"첨부한 이미지와 동일한 제품 이미지를 생성해줘"**
+  </Step>
+  
+  <Step title="생성 및 활용">
+    <img src="https://carat-assets.s3.ap-northeast-2.amazonaws.com/sooyeon/2025_blog/0613.webp" alt="완성된 광고 연출컷" className="rounded-lg shadow-lg" />
+  </Step>
+</Steps>
+
+## 프롬프트 예시
+
+<RequestExample>
+  ```text 프롬프트 예시
+  파란 하늘과 구름 배경에 서리가 맺힌 캔, 
+  청량감을 강조한 광고 느낌의 렌더링
+  첨부한 이미지와 동일한 제품 이미지를 생성해줘
+  ```
+</RequestExample>
+
+## 추가 활용 팁
+
+<CardGroup cols={2}>
+  <Card title="영상으로 변환" icon="video" href="#">
+    생성된 이미지에 "자연스럽게 움직여줘" 프롬프트로 동영상 만들기
+  </Card>
+  
+  <Card title="시리즈 제작" icon="layer-group" href="#">
+    동일 제품으로 다양한 배경의 시리즈물 제작하기
+  </Card>
+  
+  <Card title="계절별 마케팅" icon="calendar" href="#">
+    봄꽃, 여름 해변, 가을 단풍, 겨울 눈 등 계절감 있는 배경 활용
+  </Card>
+  
+  <Card title="SNS 최적화" icon="share" href="#">
+    정사각형, 세로형 등 SNS 플랫폼별 최적 비율로 생성
+  </Card>
+</CardGroup>
