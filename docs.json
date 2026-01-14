@@ -1,102 +1,130 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "$schema": "https://mintlify.com/docs.json",
+  "name": "캐럿 FAQ",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#007aff",
+    "light": "#007aff",
+    "dark": "#007aff"
   },
-  "favicon": "/favicon.svg",
+  "logo": {
+    "light": "/logo/light.avif",
+    "dark": "/logo/dark.svg",
+    "href": "https://carat.im/"
+  },
+  "favicon": "/favicon.png",
+  "appearance": {
+    "default": "light"
+  },
+  "background": {
+    "decoration": "gradient"
+  },
+  "navbar": {
+    "primary": {
+      "type": "button",
+      "label": "바로 생성하기",
+      "href": "https://carat.im/create"
+    }
+  },
   "navigation": {
-    "tabs": [
+    "global": {
+      "anchors": [
+        {
+          "anchor": "캐럿 팀",
+          "icon": "users",
+          "href": "https://team.carat.im/"
+        },
+        {
+          "anchor": "블로그",
+          "icon": "newspaper",
+          "href": "https://carat.im/blog"
+        },
+        {
+          "anchor": "채용",
+          "icon": "graduation-cap",
+          "href": "https://carat.career.greetinghr.com/"
+        }
+      ]
+    },
+    "languages": [
       {
-        "tab": "Guides",
-        "groups": [
+        "language": "en",
+        "tabs": [
           {
-            "group": "Get Started",
+            "tab": "집",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "carat/ko"
             ]
           },
           {
-            "group": "Essentials",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+            "tab": "자주 묻는 질문",
+            "groups": [
+              {
+                "group": "결제/환불",
+                "pages": [
+                  "carat/ko/categories/결제환불-6751bbd3",
+                  "carat/ko/articles/잘못-결제했어요-환불할-수-있나요--35b69f47",
+                  "carat/ko/articles/포인트와-열쇠-사용-내역을-알-수-있나요-b4ffbc5b"
+                ]
+              },
+              {
+                "group": "유료 플랜",
+                "pages": [
+                  "carat/ko/articles/구독-혜택을-사용하지-않았는데-환불받을-수-있나요-556c1e33",
+                  "carat/ko/articles/유료-구독을-해지하고-싶어요-어떻게-해야-하나요-0e2d3933",
+                  "carat/ko/articles/자주-묻는-질문-c096e71e"
+                ]
+              }
             ]
           }
         ]
       },
       {
-        "tab": "API Reference",
-        "groups": [
+        "tabs": [
           {
-            "group": "API Documentation",
+            "tab": "ホーム",
             "pages": [
-              "api-reference/introduction"
+              "ja/carat/ko"
             ]
           },
           {
-            "group": "Endpoint Examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+            "tab": "よくある質問",
+            "groups": [
+              {
+                "group": "支払い/返金",
+                "pages": [
+                  "ja/carat/ko/categories/결제환불-6751bbd3",
+                  "ja/carat/ko/articles/잘못-결제했어요-환불할-수-있나요--35b69f47",
+                  "ja/carat/ko/articles/포인트와-열쇠-사용-내역을-알-수-있나요-b4ffbc5b"
+                ]
+              },
+              {
+                "group": "有料プラン",
+                "pages": [
+                  "ja/carat/ko/articles/구독-혜택을-사용하지-않았는데-환불받을-수-있나요-556c1e33",
+                  "ja/carat/ko/articles/유료-구독을-해지하고-싶어요-어떻게-해야-하나요-0e2d3933",
+                  "ja/carat/ko/articles/자주-묻는-질문-c096e71e"
+                ]
+              }
             ]
           }
-        ]
+        ],
+        "language": "ja"
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
+    ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "instagram": "https://www.instagram.com/carat.app/",
+      "linkedin": "https://www.linkedin.com/company/paradotcorp/"
+    }
+  },
+  "fonts": {
+    "heading": {
+      "family": "Reddit Sans"
+    },
+    "body": {
+      "family": "Reddit Sans"
     }
   }
 }
